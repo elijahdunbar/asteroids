@@ -1,5 +1,5 @@
 {
-  "cSpell.words": ["circleshape"],
+  "cSpell.words": ["circleshape", "COOLDOWN"],
   "python.analysis.typeCheckingMode": "off",
   "python.analysis.autoImportCompletions": true
 }
