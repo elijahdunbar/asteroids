@@ -1,7 +1,9 @@
-import pygame
 import random
+
+import pygame
+
 from asteroid import Asteroid
-from constants import *
+from constants import *  # noqa: F403
 
 
 class AsteroidField(pygame.sprite.Sprite):
@@ -48,4 +50,5 @@ class AsteroidField(pygame.sprite.Sprite):
             velocity = velocity.rotate(random.randint(-30, 30))
             position = edge[1](random.uniform(0, 1))
             kind = random.randint(1, ASTEROID_KINDS)
-            self.spawn(ASTEROID_MIN_RADIUS * kind, position, velocity)
+            self.spawn(ASTEROID_MIN_RADIUS * kind, position, velocity)  # noqa: F405
+
